@@ -16,7 +16,6 @@ body {
         Calibri,
         'Trebuchet MS',
         sans-serif;
-    /* overflow: hidden; */
 }
 
 
@@ -67,17 +66,13 @@ header {
 }
 
 
-
-/*---------------------*/
+/*-------------PRESENTATION--------------*/
 .container-presentation {
     width: 100%;
-    height: 60vh;
+    height: 640px;
     display: flex;
     justify-content: space-between;
-    padding: 0 10%;
-    margin-top: 140px;
-    /* background-colorgba(0, 0, 255, 0.21)38); */
-    /* background-color: rgba(59, 59, 212, 0.38); */
+    padding: 200px 10% 60px 10%;
 }
 
 .presentation {
@@ -87,7 +82,6 @@ header {
     flex-direction: column;
     justify-content: center;
     padding-right: 20px;
-    /* border: 1px solid red; */
 }
 
 .presentation h1 {
@@ -105,10 +99,6 @@ header {
     margin: 20px 25px;
 }
 
-
-
-/* .presentation p {} */
-
 .sites {
     width: 350px;
     height: 10%;
@@ -117,7 +107,6 @@ header {
     align-content: center;
     list-style: none;
     margin: 10px 0 0 30px;
-    /* border: 1px solid black; */
 }
 
 .sites img {
@@ -131,15 +120,12 @@ header {
 .sites .resume {
     font-size: 20px;
     color: #ffffff;
-    /* background-color: #868683; */
     background-color: #243b68;
     padding: 6px 12px;
     border-radius: 8px;
 }
 
 .sites .resume:hover {
-    /* color: #686866; */
-    /* border: 2px solid #686866; */
     background-color: #37548f;
 }
 
@@ -148,19 +134,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: radial-gradient(#e1e1de, #737370, #000000); */
     background: radial-gradient(#e1e1de, #204488, #000000);
-    /* border: 1px solid red; */
     border-radius: 50%;
 }
 
 .presentation-img img {
     width: 300px;
-    /* border-radius: 50%; */
-    /* margin-top: 15%; */
-    /*opacity: 0.9;
-    box-shadow: 10px 10px 8px 10px #403e3e89, -20px -20px 8px -5px #403e3e89;
-    */
 }
 
 
@@ -172,11 +151,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: linear-gradient(hsl(0, 0%, 100%), #959593, #ffffff);
     padding: 20px 10% 0 10%;
     margin-top: 100px;
-    /* background-color: #959593; */
-    background: linear-gradient(hsl(0, 0%, 100%), #959593, #ffffff);
-    /* border: 1px solid red; */
 }
 
 .container_skills h1 {
@@ -201,6 +178,7 @@ header {
     width: 100%;
     height: 400px;
     text-align: center;
+    padding-top: 30px;
     margin-top: 60px;
 }
 
@@ -358,4 +336,50 @@ footer {
 footer p {
     color: #ffffff;
     margin-left: 40px;
+}
+
+
+
+/*-----------MOVIL-----------*/
+@media screen and (max-width: 480px) {
+
+    header {
+        height: 50px;
+        padding: 0 5%;
+    }
+
+    .name-icon img {
+        height: 30px;
+    }
+
+    .direction li {
+        font-size: 14px;
+        margin-right: 6px;
+    }
+
+    .container-presentation {
+        height: 1140px;
+        padding: 100px 5% 0 5%;
+        flex-direction: column-reverse;
+        border: 1px solid red;
+    }
+
+    .presentation {
+        width: 100%;
+        border: 1px solid red;
+    }
+
+    .presentation h1 {
+        font-size: 30px;
+    }
+
+    .presentation-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .presentation-img img {
+        width: 280px;
+        height: 280px;
+    }
 }
